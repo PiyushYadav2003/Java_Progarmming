@@ -1,17 +1,15 @@
 class logic
 {
-    int i,max=0;
-    void findLargestDigit(int n)
+    int i,cnt;
+    void displayFactors(int n)
     {
-        while (n > 0) 
-        {
-            digits = n % 10;
-            if(max>digits)
-                max=digits;
-            temp /= 10;
-        }
+       for(i=0;i<n;i++)
+       {
+            if(num%i==0)
+                cnt++;
+       } 
     }
-    System.out.println(macx+" is Largest digit in number")
+    System.out.println("Total number of factors of "+n+" is "+cnt);
 }
 
 class program
@@ -19,6 +17,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.findLargestDigit(83429);
+        obj.displayFactors(12);
     }
 }

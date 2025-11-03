@@ -1,15 +1,17 @@
 class logic
 {
-    int i,iSum=0;
-    void SumEvenNumber(int n)
+    int i,max=0;
+    int iSum=0;
+    void ProductofDigit(int n)
     {
-        for(i=1;i<=10;i++)
+        while (n > 0) 
         {
-            if(n%i==0)
-                iSum=iSum+i;
+            digits = n % 10;
+            iSum = iSum*digits;
+            temp /= 10;
         }
     }
-    System.out.println("Sum of Even Number is "+iSum);
+    System.out.println("Product of "+n+ " is "+iSum);
 }
 
 class program
@@ -17,6 +19,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.SumEvenNumber(10);
+        obj.ProductofDigit(234);
     }
 }

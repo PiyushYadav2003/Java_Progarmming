@@ -1,18 +1,24 @@
 class logic
 {
-    int i,min=10;
-    int digit,temp;
-    void findSmallestDigit(int n)
+    int i;
+    void divisibleby2and3(int n)
     {
-        while (n > 0) 
-        {
-            digits = n % 10;
-            if(min<digits)
-                max=digits;
-            temp /= 10;
-        }
+       if(n%2==0)
+       {
+            if(n%3==0)
+            {
+                System.out.println(n+" is divisible by 2 and 3 both");
+            }
+            else
+            {
+                System.out.println(n+" is divisible by 2 only");
+            }
+       }
+       else if(n%3==0)
+                System.out.pirntln(n+" is divisible by 3 only");
+       else
+            System.out.pirntln(n+" is not divisble by 2 and 3");
     }
-    System.out.println(min+" is Smallest digit in number");
 }
 
 class program
@@ -20,6 +26,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.findSmallestDigit(83429);
+        obj.divisibleby2and3(12);
     }
 }

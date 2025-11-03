@@ -1,18 +1,14 @@
 class logic
 {
-    int i,iSum=0;
-    void checkPerfect(int num)
+    int i;
+    void displayFactors(int n)
     {
-        for(i=1;i<num;i++)
-        {
+       for(i=0;i<n;i++)
+       {
             if(num%i==0)
-                sum=sum+i;
-        }
+                System.out.println(i);
+       } 
     }
-    if(sum==num)
-        System.out.println(num+" is a perfect number");
-    else 
-        System.out.println(num+" is not a perfect number");
 }
 
 class program
@@ -20,6 +16,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.checkPerfect(6);
+        obj.displayFactors(12);
     }
 }
