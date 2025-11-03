@@ -1,19 +1,23 @@
 class logic
 {
-    int i,iSum=0;
-    void calculateSum(int n)
+    int iSum=0;
+    void sumofDigit(int num)
     {
-        for(i=0;i<n;i++)
-            iSum=iSum+i;
+        while(iNo>0)
+        {
+            iDigit=iNo%10;
+            iSum=iSum+iDigit;
+            iDigit=iNo/10;
+        }
     }
-    System.out.println("Sum of First naturan number is "+isum+);
+    System.out.println(cnt);
 }
 
 class program
 {
     public static void main(String args[])
     {
-        logic obj = new logic();
-        obj.calculateSum(10);
+        logic obj = logic();
+        obj.countDigit(2345);
     }
 }

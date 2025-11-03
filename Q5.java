@@ -1,16 +1,14 @@
 class logic
 {
-    int cnt;
-    void countDigit(int num)
+    void printTable(int num1)
     {
-        while(iNo>0)
+        int i,ans;
+        for(i=1;i<num1;i++)
         {
-            iDigit=iNo%10;
-            cnt++;
-            iDigit=iNo/10;
+            ans=num1*i;
+            System.out.println(ans);
         }
     }
-    System.out.println(cnt);
 }
 
 class program
@@ -18,6 +16,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.countDigit(2345);
+        obj.printTable(5);
     }
 }
