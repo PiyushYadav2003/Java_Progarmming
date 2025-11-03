@@ -1,13 +1,13 @@
 class logic
 {
-    void printTable(int num1)
+    void checkSign(int num1)
     {
-        int i,ans;
-        for(i=1;i<num1;i++)
-        {
-            ans=num1*i;
-            System.out.println(ans);
-        }
+        if(num1>0)
+            System.out.println("Positive");
+        else if(num1==0)
+            System.out.pirntln("Zero");
+        else
+            System.out.println("Negative");
     }
 }
 
@@ -16,6 +16,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printTable(5);
+        obj.printOddNumber(-8);
     }
 }

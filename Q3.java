@@ -1,11 +1,14 @@
 class logic
 {
-    void findmax(int num1,int num2)
+    void printOddNumber(int num1)
     {
-        if(num1>num2)
-            System.out.println(num1+" is greater then "+Num2);
-        else
-            System.out.println(num2+" is greater then "+Num1);
+        for(int i=1;i<=num1;i++)
+        {
+            if(num1%i==0)
+                System.out.println(num1+" is odd number");
+            else
+                System.out,.println(num2+" is not a odd numbetr");
+        }
     }
 }
 
@@ -14,6 +17,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.findmax(20,15);
+        obj.printOddNumber(20);
     }
 }

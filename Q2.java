@@ -1,20 +1,15 @@
 class logic
 {
-    int cnt,num2,rev;
-    void countDigit(int num)
+    void printEvenNumber(int num1)
     {
-        num2=num;
-        while(iNo>0)
+        for(int i=1;i<=num1;i++)
         {
-            iDigit=iNo%10;
-            rev=rev*10+iDigit;
-            iNo=iNo/10;
+            if(num1%i==0)
+                System.out.println(num1+" is even number");
+            else
+                System.out,.println(num2+" is not a even numbetr");
         }
     }
-    if(rev==num2)
-        System.out.println(+rev+" is Palindrome");
-    else
-        System.out.println(+rev+" is not a Palindrome");
 }
 
 class program
@@ -22,6 +17,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.countDigit(2345);
+        obj.printEvenNumber(20);
     }
 }

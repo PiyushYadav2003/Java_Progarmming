@@ -1,16 +1,12 @@
 class logic
 {
-    int iSum=0;
-    void sumofDigit(int num)
+    void checkPrime(int num1)
     {
-        while(iNo>0)
-        {
-            iDigit=iNo%10;
-            iSum=iSum+iDigit;
-            iDigit=iNo/10;
-        }
+        if(num%2==0)
+            System.out.println(num1+" is not a prime");
+        else
+            System.out.println(num1+" is a prime");
     }
-    System.out.println(cnt);
 }
 
 class program
@@ -18,6 +14,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.countDigit(2345);
+        obj.checkPrime(13);
     }
 }
