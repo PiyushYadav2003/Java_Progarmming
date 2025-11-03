@@ -1,18 +1,21 @@
 class logic
 {
-    int Ecnt=0,Ocnt=0;
-    void printOddNumber(int num1)
+    int temp = number;
+    int[] digits = new int[10]; 
+    int count = 0;
+    void printDigit(int num)
     {
-        for(int i=1;i<=num1;i++)
-        {
-            if(num1%i==0)
-               Ecnt++; 
-            else
-               Ocnt++;
+        while (temp > 0) {
+            digits[count] = temp % 10;
+            temp /= 10;
+            count++;
         }
+
+        for (int i = count - 1; i >= 0; i--) {
+            System.out.println(digits[i]);
+        }
+
     }
-    System.out.println("Sum of Even number is "+Ecnt);
-    System.out.println("Sum of Odd number is "+Ocnt);
 }
 
 class program
@@ -20,6 +23,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printOddNumber(20);
+        obj.printDigit(9876);
     }
 }

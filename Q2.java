@@ -1,14 +1,15 @@
 class logic
 {
-    void printEvenNumber(int num1)
+    void dispalyGrade(int marks)
     {
-        for(int i=1;i<=num1;i++)
-        {
-            if(num1%i==0)
-                System.out.println(num1+" is even number");
-            else
-                System.out,.println(num2+" is not a even numbetr");
-        }
+        if(marks>80)
+            System.out.println("A");
+        else if(marks>60)
+            System.out.println("B");
+        else if(marks>40)
+            System.out.println("C");
+        else
+            System.out.println("Fail");
     }
 }
 
@@ -17,6 +18,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printEvenNumber(20);
+        obj.dispalyGrade(82);
     }
 }

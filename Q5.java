@@ -1,13 +1,10 @@
 class logic
 {
-    void checkSign(int num1)
+    int ans;
+    void calculatePower(int num1,int num2)
     {
-        if(num1>0)
-            System.out.println("Positive");
-        else if(num1==0)
-            System.out.pirntln("Zero");
-        else
-            System.out.println("Negative");
+        ans = math.pow(num1,num2)
+        System.out.println("Power is "+ans);
     }
 }
 
@@ -16,6 +13,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printOddNumber(-8);
+        obj.calculatePower(2,5);
     }
 }

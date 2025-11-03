@@ -1,11 +1,11 @@
 class logic
 {
-    void checkPrime(int num1)
+    void checkLeap(int year)
     {
-        if(num%2==0)
-            System.out.println(num1+" is not a prime");
+        if((year%400==0) or (year%4==0) && (year%100!=0))
+            System.out.println(year+" is a leap year");
         else
-            System.out.println(num1+" is a prime");
+            System.out.println(year+" is not a leap year");
     }
 }
 
@@ -14,6 +14,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.checkPrime(13);
+        obj.checkLeap(2024);
     }
 }

@@ -1,14 +1,17 @@
 class logic
 {
-    void printOddNumber(int num1)
+    void checkDivisible(int num)
     {
-        for(int i=1;i<=num1;i++)
+        if(num%5==0)
         {
-            if(num1%i==0)
-                System.out.println(num1+" is odd number");
+            if(num%7==0)
+                System.out.println(num+" is divisible by 5 and 7 both");
             else
-                System.out,.println(num2+" is not a odd numbetr");
+                System.out.println(Num+" is Divisible by 5 Only");
         }
+        else 
+           System.out.println(Num+" is not Divisible by 5 and 7"); 
+        
     }
 }
 
@@ -17,6 +20,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printOddNumber(20);
+        obj.checkDivisible(55);
     }
 }
