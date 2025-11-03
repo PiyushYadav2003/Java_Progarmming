@@ -1,11 +1,18 @@
 class logic
 {
-    int ans;
-    void calculatePower(int num1,int num2)
+    int i,min=10;
+    int digit,temp;
+    void findSmallestDigit(int n)
     {
-        ans = math.pow(num1,num2)
-        System.out.println("Power is "+ans);
+        while (n > 0) 
+        {
+            digits = n % 10;
+            if(min<digits)
+                max=digits;
+            temp /= 10;
+        }
     }
+    System.out.println(min+" is Smallest digit in number");
 }
 
 class program
@@ -13,6 +20,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.calculatePower(2,5);
+        obj.findSmallestDigit(83429);
     }
 }

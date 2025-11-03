@@ -1,15 +1,10 @@
 class logic
 {
-    void dispalyGrade(int marks)
+    int i;
+    void printReverse(int n)
     {
-        if(marks>80)
-            System.out.println("A");
-        else if(marks>60)
-            System.out.println("B");
-        else if(marks>40)
-            System.out.println("C");
-        else
-            System.out.println("Fail");
+        for(i=n;i>0;i--)
+            System.out.println(i);
     }
 }
 
@@ -18,6 +13,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.dispalyGrade(82);
+        obj.printReverse(10);
     }
 }

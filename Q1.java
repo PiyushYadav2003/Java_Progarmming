@@ -1,12 +1,15 @@
 class logic
 {
-    void checkLeap(int year)
+    int i,iSum=0;
+    void SumEvenNumber(int n)
     {
-        if((year%400==0) or (year%4==0) && (year%100!=0))
-            System.out.println(year+" is a leap year");
-        else
-            System.out.println(year+" is not a leap year");
+        for(i=1;i<=10;i++)
+        {
+            if(n%i==0)
+                iSum=iSum+i;
+        }
     }
+    System.out.println("Sum of Even Number is "+iSum);
 }
 
 class program
@@ -14,6 +17,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.checkLeap(2024);
+        obj.SumEvenNumber(10);
     }
 }

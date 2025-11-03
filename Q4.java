@@ -1,21 +1,17 @@
 class logic
 {
-    int temp = number;
-    int[] digits = new int[10]; 
-    int count = 0;
-    void printDigit(int num)
+    int i,max=0;
+    void findLargestDigit(int n)
     {
-        while (temp > 0) {
-            digits[count] = temp % 10;
+        while (n > 0) 
+        {
+            digits = n % 10;
+            if(max>digits)
+                max=digits;
             temp /= 10;
-            count++;
         }
-
-        for (int i = count - 1; i >= 0; i--) {
-            System.out.println(digits[i]);
-        }
-
     }
+    System.out.println(macx+" is Largest digit in number")
 }
 
 class program
@@ -23,6 +19,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.printDigit(9876);
+        obj.findLargestDigit(83429);
     }
 }

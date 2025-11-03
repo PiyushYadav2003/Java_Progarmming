@@ -1,18 +1,18 @@
 class logic
 {
-    void checkDivisible(int num)
+    int i,iSum=0;
+    void checkPerfect(int num)
     {
-        if(num%5==0)
+        for(i=1;i<num;i++)
         {
-            if(num%7==0)
-                System.out.println(num+" is divisible by 5 and 7 both");
-            else
-                System.out.println(Num+" is Divisible by 5 Only");
+            if(num%i==0)
+                sum=sum+i;
         }
-        else 
-           System.out.println(Num+" is not Divisible by 5 and 7"); 
-        
     }
+    if(sum==num)
+        System.out.println(num+" is a perfect number");
+    else 
+        System.out.println(num+" is not a perfect number");
 }
 
 class program
@@ -20,6 +20,6 @@ class program
     public static void main(String args[])
     {
         logic obj = logic();
-        obj.checkDivisible(55);
+        obj.checkPerfect(6);
     }
 }
